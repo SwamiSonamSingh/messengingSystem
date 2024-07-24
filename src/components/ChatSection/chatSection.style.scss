@@ -1,0 +1,107 @@
+.whats-app-chat-section{
+    width: 100%;
+    font-family: "Nunito", sans-serif;
+    &__profile{
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 10px 20px;
+        gap: 15px;
+        border-bottom: 2px solid #dbdbdb;
+        background: linear-gradient(
+                rgb(255, 255, 255) -6.71%,
+                rgb(235, 235, 242) 56.19%,
+                rgb(223, 223, 231) 106.56%
+            );
+        &__avatar{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+        svg {
+            height: 40px;
+            width: 40px;
+        }
+        &__name{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    &__chatText{
+        padding: 20px 20px 0px 20px;
+        overflow-y: auto;
+        height: 82vh;
+        &::-webkit-scrollbar{
+            width: 0px;
+        }
+        &__right,&__left{
+            display: flex;
+            margin-bottom: 20px;
+            &__text{
+                border-radius: 5px;
+                padding: 5px 10px;
+            }
+        }
+        &__right{
+            justify-content: flex-end;
+            &__text{
+                color: white;
+                background-color: #015C4B;
+            }
+        }
+        &__left{
+            &__text{color: black;
+                opacity: 0.7;
+                background-color: rgba(225, 221, 221, 0.5);
+            }
+        }
+    }
+    &__input{
+        width: 95%;
+        margin: 0px 20px;
+        height: 35px;
+        font-size: 15px;
+        border-radius: 10px;
+        text-indent: 10px;
+        border: 2px solid;
+        outline: unset;
+    }
+    &__noChatText{
+        height: 91vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__title{
+            background-color: #182229;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+    &__noData{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 15px;
+        font-family: "Nunito", sans-serif;
+        &__avatar{
+            width: 320px;
+            height: 213px;
+        }
+        &__title{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+        &__action{
+            background-color: #03CF9C;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 25px;
+        }
+    }
+}
